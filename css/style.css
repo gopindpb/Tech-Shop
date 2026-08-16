@@ -9,11 +9,9 @@
     display: flex;
 }
 
-
 .navbar-links {
     margin-left: 400px;
 }
-
 
 .nav-actions {
     display: flex;
@@ -28,7 +26,6 @@
     position: relative;
     margin-right: 20px;
     margin-left: 20px;
-
 }
 
 .hero-section .hero-image {
@@ -43,7 +40,6 @@
     position: absolute;
     text-align: center;
     top: 50%;
-    bottom: 50%;
     transform: translateY(-50%);
     color: white;
     width: auto;
@@ -53,24 +49,20 @@
 .hero-content h1 {
     text-align: left;
     margin-left: 60px;
-
 }
 
 .hero-content p {
     margin-left: 60px;
-
 }
 
 .latest-prod {
     text-align: center;
-   margin: 30px auto;
+    margin: 30px auto;
     font-size: 40px;
     width: auto;
     border-bottom: 3px solid #ddd;
     max-width: 1300px;
-
     padding-bottom: 30px;
-
 }
 
 .filter-buttons{
@@ -79,66 +71,88 @@
     gap: 20px;
 }
 
-
-/* Contact page */
-#Contact-heading{
-    margin-top: 30px;
-    text-align: center;
-}
-
+/* horizontal line */
 #horizonal-line{
     border-top: 3px solid #ddd;
     margin: 30px;
     width: 95%;
 }
-#contact-form{
+
+/* Forms */
+.form-wrapper{
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 100%;
+    max-width: 500px;
     margin: 60px auto;
-    height: 500px;
-   
 }
 
-#contact-form form {
+.form-wrapper form {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
+    max-width: 400px;
 }
 
-#contact-form form > div{
+.form-wrapper form > div{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
-
-#contact-form input,#contact-form textarea{
+.form-wrapper input,
+.form-wrapper textarea{
     padding: 10px;
     outline: none;
     border: 1px solid #c5c1c1;
     border-radius: 5px;
-    width: 350px;
-    
 }
 
-#contact-form textarea{
+.form-wrapper textarea{
     height: 130px;
 }
 
-#contact-button{
+.form-button-wrap{
     width: 100%;
-    max-width: 60px;
+    max-width: 70px;
     align-self: center;
-    
 }
-#contact-button button{
+
+.form-button-wrap button{
     border: 1px solid #c5c1c1;
     border-radius: 5px;
     color: aliceblue;
-     background-color: grey;
-     cursor: not-allowed;
-   
-    
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+#contact-form{
+    width: 350px;
+    height: 500px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 350px;
+}
+
+/* About us */
+.abt-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.abt-cards .card{
+    flex: 1;
+}
+
+.card-description{
+    text-align: center;
 }

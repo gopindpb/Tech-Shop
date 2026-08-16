@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Login</title>
 </head>
-
 <body>
     <header>
         <div id="navbar"></div>
     </header>
-
     <main>
-    <h2 class="Contact-heading text-center m-4">Contact Us</h2>
-     
+
+    <h2 class="login-heading text-center m-4">Login</h2>
+
     <div id="horizonal-line"></div>
-    <div id="contact-form" class="form-wrapper">
+
+
+     <div id="login-form" class="form-wrapper">
         <form >
 
-            <div id="contact-username">
-                <label for="username" >Name</label>
-                <input type="text" name="username" id="username" placeholder="Enter your name">
-            </div>
-
-            <div id="contact-email"> 
-                <label for="email">Email</label>
+            <div id="login-email"> 
+                <label for="email">Email address</label>
                 <input type="email" name="email" id="email" placeholder="name@example.com">
             </div>
 
-            <div id="contact-message"> 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <div id="login-password"> 
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
 
-            <div id="contact-button" class="form-button-wrap"><button disabled>Send</button></div>
+            <p>New here? <a href="register.html">Register here</a></p>
+
+            <div id="login-button" class="form-button-wrap"><button disabled>Login</button></div>
 
         </form>
     </div>
 
     </main>
-     <
-
     <script src="js/script.js"></script>
 </body>
-
 </html>
