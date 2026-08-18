@@ -14,7 +14,7 @@ async function getAllProducts() {
         let response = await fetch("https://fakestoreapi.com/products");
         let products = await response.json();
         console.log(products);
-        Allproducts = products;
+        Allproducts = [...products];
         displayProducts(products)
     }
     catch (error) {
@@ -22,6 +22,8 @@ async function getAllProducts() {
 
     }
 }
+
+
 getAllProducts();
 // Products 
 
@@ -54,5 +56,48 @@ function displayProducts(products) {
     })
 }
 
+///Filtering 
+/////ALL
+const allProductsFilter = document.getElementById("all-btn")
+allProductsFilter.addEventListener("click", () => {
+    displayProducts(Allproducts);
+})
 
+//MensProducts
+const mensProductsFilter = document.getElementById("mens-btn")
+mensProductsFilter.addEventListener("click", () => {
+    const mensProducts=Allproducts.filter((product)=>{
+        return product.category === "men's clothing";
 
+    })
+
+    displayProducts(mensProducts)
+});
+
+//WomensProduct
+const womensProductFilter = document.getElementById("womens-btn")
+womensProductFilter.addEventListener("click",()=>{
+    const womensProducts = Allproducts.filter((product)=>{
+        return product.category === "women's clothing";
+    })
+    displayProducts(womensProducts)
+})
+
+//Jewelry
+
+const jewelryProductFilter = document.getElementById("jewelry-btn")
+jewelryProductFilter.addEventListener("click",()=>{
+    const jewelryProducts = Allproducts.filter((product)=>{
+        return product.category === "jewelery"
+    })
+    displayProducts(jewelryProducts)
+})
+
+//Electronics
+const electronicsProductFilter = document.getElementById("electronics-btn");
+electronicsProductFilter.addEventListener("click",()=>{
+    const electronicsProducts = Allproducts.filter((product)=>{
+        return product.category === "electronics"
+    })
+    displayProducts(electronicsProducts)
+})
